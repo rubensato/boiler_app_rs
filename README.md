@@ -2,10 +2,8 @@
 
 - Trabajo de la materia T1-09-41 - MODELOS COMPUTACIONALES DE GESTIÓN ADMINISTRATIVA, de la carrera Ingenieria en Sistemas Informaticos de la Universidad Abierta Intermerica, UAI, sede Rosario.
 
-
-
 ---
-## -- Consigna completa: Clase 08 - 23sept2021 --
+## -- Consigna completa: Clase 06 - 23sept2021 --
 
 La problemática de la semana 6 consiste en:
 
@@ -62,7 +60,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
    
 ---   
 ---
-##  5 Licencia y Copyright
+##  Licencia y Copyright
   
 © Ruben Sato - Año 2021
    
