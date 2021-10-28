@@ -1,4 +1,52 @@
-# Getting Started with Create React App
+# Boilers View React App
+
+- Trabajo de la materia T1-09-41 - MODELOS COMPUTACIONALES DE GESTIÓN ADMINISTRATIVA, de la carrera Ingenieria en Sistemas Informaticos de la Universidad Abierta Intermerica, UAI, sede Rosario.
+
+
+
+---
+## -- Consigna completa: Clase 08 - 23sept2021 --
+
+La problemática de la semana 6 consiste en:
+
+Partiendo del screenflow ya realizado, seleccionar un recurso determinado y escribir en componentes cada una de las componentes necesarias para:
+
+- La página que contiene el recurso.
+- Listar los registros correspondientes al recurso en cuestión.
+- Agregar un nuevo registro del recurso.
+- Actualizar un recurso existente.
+- Borrar un recurso existente.
+
+El código deberá ser escrito utilizando React y no deberá realizar llamadas al backend.
+
+Cada miembro del equipo deberá crear un repositorio de manera individual y crear un proyecto React utilizando la herramienta CLI create-react-app.
+
+Se deberán utilizar Mocks para hacer un llenado previo del listado del recurso a desarrollar. Los mocks deberán estar contenidos en una carpeta cuyo nombre sea “mocks” y en archivos JSON correspondientes al recurso en cuestión (por ej: “mocks/boilers.json”).
+
+El menú de navegación no es necesario para esta práctica.
+
+No es necesario que la aplicación sea responsive.
+
+
+Pasos a seguir:
+- Basados en el screenflow seleccionado por el equipo, el grupo deberá designar un recurso para miembro del equipo.
+- Cada miembro del grupo, deberá crear un repositorio en su computadora y crear una aplicación React utilizando el CLI de create-react-app.
+- Una vez creada la aplicación base, deberá crear un repositorio en GitHub y subirla.
+- Cada miembro del equipo deberá desarrollar la página correspondiente al recurso que le corresponda.
+- Se deberá desarrollar una página correspondiente al recurso asignado. La página deberá contener:
+1. Título.
+2. Listado de registros correspondientes al recurso.
+3. Un botón y un input que permita agregar nuevos recursos.
+4. Estilos correspondientes.
+- Se deberá desarrollar un componente que liste los registros correspondientes al recurso asignado. Al correr la aplicación, la lista deberá mostrar registros por defecto. Estos registros por defecto deberán estar contenidos en un archivo mock, en un archivo del tipo JSON y deberán importarse en la misma.
+- Se deberá desarrollar un componente “Item” que represente una fila de la lista. Cada componente Item deberá tener las siguientes acciones por defecto:
+1. Editar.
+2. Borrar.
+- Se deberá desarrollar un componente que permita agregar nuevos registros del recurso asignado. Este componente deberá contener un formulario con los campos requeridos para ingresar un nuevo registro.
+- Responder a la Problemática Semanal 06 de Classroom con el link del repositorio de GitHub con la práctica terminada.
+
+---
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,60 +59,10 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
+---   
+---
+##  5 Licencia y Copyright
+  
+© Ruben Sato - Año 2021
+   
