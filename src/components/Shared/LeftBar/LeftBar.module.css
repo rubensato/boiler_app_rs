@@ -1,0 +1,7 @@
+.container {
+  width: 150px;
+  height:  calc(100vh - 125px);
+  overflow: auto;
+  padding: 5px;
+  background-color:coral;
+}

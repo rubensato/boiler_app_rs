@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  float: left;
+  width: 150px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  width: 100%;
+  font-size: 22px;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  color: rgb(188, 205, 252);
+}

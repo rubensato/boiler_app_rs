@@ -1,7 +1,9 @@
+import Layout from "./components/Shared/Layout";
+
 function App() {
   return (
     <div>
-      <p>Boilers View App</p>
+      <Layout />
     </div>
   );
 }
