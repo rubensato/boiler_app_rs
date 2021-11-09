@@ -5,7 +5,7 @@ function Footer() {
     <div className={style.footer}>
       <p>Copyright &copy; 2021</p>
       <div>
-        <p>Boilers Footer</p>
+        <p>The Boilers Group Co.</p>
       </div>
     </div>
   );

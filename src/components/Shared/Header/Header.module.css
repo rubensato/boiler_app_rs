@@ -10,7 +10,7 @@
 .logo {
   float: left;
   width: 150px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bolder;
   text-align: center;
   color: white;
@@ -18,8 +18,8 @@
 
 .title {
   width: 100%;
-  font-size: 22px;
-  font-weight: lighter;
+  font-size: 25px;
+  font-weight: normal;
   font-style: italic;
   text-align: center;
   color: rgb(188, 205, 252);

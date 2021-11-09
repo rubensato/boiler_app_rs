@@ -1,7 +1,19 @@
-.container {
+.leftBarContainer {
   width: 150px;
-  height:  calc(100vh - 125px);
+  height: calc(100vh - 125px);
   overflow: auto;
   padding: 5px;
-  background-color:coral;
+  background-color: coral;
+}
+
+.sectionLabel {
+  margin-top: 5px;
+  font-weight: normal;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sectionLabel:hover {
+  background-color: black;
 }
