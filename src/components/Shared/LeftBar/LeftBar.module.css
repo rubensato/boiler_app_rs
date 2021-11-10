@@ -2,7 +2,7 @@
   width: 150px;
   height: calc(100vh - 125px);
   overflow: auto;
-  padding: 5px;
+  padding: 1px;
   background-color: coral;
 }
 
@@ -10,10 +10,18 @@
   margin-top: 5px;
   font-weight: normal;
   color: white;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
 }
 
 .sectionLabel:hover {
+  background-color: black;
+}
+
+.sectionLabelMark {
+  margin-top: 5px;
+  font-weight: normal;
+  color: white;
+  padding: 10px;
   background-color: black;
 }

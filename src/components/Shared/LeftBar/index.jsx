@@ -9,7 +9,7 @@ function LeftBar() {
       <div className={style.sectionLabel}>
         <p>Users</p>
       </div>
-      <div className={style.sectionLabel}>
+      <div className={style.sectionLabelMark}>
         <p>Boilers</p>
       </div>
     </div>

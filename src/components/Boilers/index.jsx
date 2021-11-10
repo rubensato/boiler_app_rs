@@ -10,8 +10,8 @@ const Boilers = () => {
         <thead>
           <tr>
             <th>Id</th>
-            <th>escription</th>
-            <th>Type</th>
+            <th>Descripc&iacute;on</th>
+            <th>Tipo</th>
           </tr>
         </thead>
         {/* <tbody>
