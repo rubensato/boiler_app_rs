@@ -1,9 +1,19 @@
-import Layout from "./components/Shared/Layout";
+// componets 
+import Header from './components/Shared/Header';
+import LeftBar from './components/Shared/LeftBar';
+import MainContent from './components/Shared/MainContent';
+import Footer from './components/Shared/Footer';
+import Boilers from './components/Boilers';
 
 function App() {
   return (
     <div>
-      <Layout />
+      <Header />
+      <div className='middle'>
+        <LeftBar />
+        <Boilers />
+      </div>
+      <Footer />
     </div>
   );
 }

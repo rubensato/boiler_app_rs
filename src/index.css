@@ -12,6 +12,13 @@ html {
   height: 100%;
 }
 
+.middle {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: auto;
+}
+
 .btn {
   display: inline-block;
   background: #000;
