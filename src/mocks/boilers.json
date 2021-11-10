@@ -1,0 +1,13 @@
+[
+  { "id": 1, "description": "Zoolab", "type": "A" },
+  { "id": 3, "description": "Zoolab", "type": "C" },
+  { "id": 4, "description": "Gembucket", "type": "D" },
+  { "id": 5, "description": "Holdlamis", "type": "C" },
+  { "id": 6, "description": "Tampflex", "type": "A" },
+  { "id": 7, "description": "Bitwolf", "type": "A" },
+  { "id": 8, "description": "Tresom", "type": "D" },
+  { "id": 9, "description": "Opela", "type": "B" },
+  { "id": 10, "description": "Stringtough", "type": "C" },
+  { "id": 11, "description": "Konklab", "type": "A" },
+  { "id": 12, "description": "Sonair", "type": "B" }
+]
