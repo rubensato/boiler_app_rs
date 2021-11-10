@@ -1,4 +1,4 @@
-// componets 
+// componets
 import Header from './components/Shared/Header';
 import LeftBar from './components/Shared/LeftBar';
 import MainContent from './components/Shared/MainContent';
