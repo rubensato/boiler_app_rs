@@ -1,15 +1,19 @@
-const Item = () => {
+import Button from "../../Shared/Button";
+
+import style from './Item.module.css';
+
+const Item = ({ boiler }) => {
   return (
     <tr>
-      <td>{id}</td>
-      <td>{description}</td>
-      <td>{type}</td>
-      <td className='actions'>
-        <button type='button'>Editar</button>
-        <button type='button'>Eliminar</button>
+      <td>{boiler.id}</td>
+      <td>{boiler.description}</td>
+      <td>{boiler.type}</td>
+      <td className={style.actions}>
+        <Button color='green' text='Edit' />
+        <Button color='red' text='Delete' />
       </td>
     </tr>
   );
 };
 
-export default Building;
+export default Item;

@@ -5,8 +5,35 @@
 }
 
 .headerTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.tableStyle {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableStyle td,
+.tableStyle th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tableStyle tr:nth-child(even) {
+  background-color: #beebdc;
+}
+
+.tableStyle tr:hover {
+  background-color: #ddd;
+}
+
+.tableStyle th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}

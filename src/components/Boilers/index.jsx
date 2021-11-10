@@ -1,29 +1,35 @@
-import Button from './Button';
+import Button from '../Shared/Button';
+import Item from './Item';
 
 import style from './Boilers.module.css';
 
-const Boilers = () => {
+const Boilers = ({ boilers }) => {
+  const onClick = () => {
+    console.log('Click');
+  };
+
   return (
     <div className={style.mainContainer}>
       <div className={style.headerTitle}>
         <h2 className=''>Boilers General Listing</h2>
-        <Button />
+        <Button color='green' text='+ Add Boiler' onClick={onClick} />
       </div>
-      <table>
+      <table className={style.tableStyle}>
         <thead>
           <tr>
             <th> Id &#35; </th>
             <th> Description </th>
             <th> Type </th>
+            <th> Actions </th>
           </tr>
         </thead>
-        {/* <tbody>
-          {buildings.length === 0
+        <tbody>
+          {boilers.length === 0
             ? 'No hay Calderas'
             : boilers.map((boiler) => (
-                <Boiler key={boiler._id} building={building} />
+                <Item key={boiler.id} boiler={boiler} />
               ))}
-        </tbody> */}
+        </tbody>
       </table>
     </div>
   );
