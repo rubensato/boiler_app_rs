@@ -3,3 +3,10 @@
   padding: 10px;
   background-color: white;
 }
+
+.headerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

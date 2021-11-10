@@ -1,17 +1,20 @@
-import style from './Boilers.module.css'
+import Button from './Button';
+
+import style from './Boilers.module.css';
 
 const Boilers = () => {
-  
   return (
     <div className={style.mainContainer}>
-      <h2 className=''>Listado de Calderas</h2>
-
+      <div className={style.headerTitle}>
+        <h2 className=''>Boilers General Listing</h2>
+        <Button />
+      </div>
       <table>
         <thead>
           <tr>
-            <th>Id</th>
-            <th>Descripc&iacute;on</th>
-            <th>Tipo</th>
+            <th> Id &#35; </th>
+            <th> Description </th>
+            <th> Type </th>
           </tr>
         </thead>
         {/* <tbody>
