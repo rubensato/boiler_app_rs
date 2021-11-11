@@ -1,13 +1,18 @@
 .mainContainer {
   width: 100%;
+  height: calc(100vh - 125px);
+  overflow: auto;
   padding: 10px;
   background-color: white;
 }
 
 .headerTitle {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .tableStyle {

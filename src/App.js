@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 // componets
 import Header from './components/Shared/Header';
 import LeftBar from './components/Shared/LeftBar';
@@ -23,12 +22,16 @@ function App() {
     { id: 12, description: 'Sonair', type: 'B' },
   ]);
 
+  const deleteBoiler = (id) => {
+    setBoilers(boilers.filter((boiler) => boiler.id !== id));
+  };
+
   return (
     <div>
       <Header />
       <div className='middle'>
         <LeftBar />
-        <Boilers boilers={ boilers } />
+        <Boilers boilers={boilers} onDelete={deleteBoiler} />
       </div>
       <Footer />
     </div>
