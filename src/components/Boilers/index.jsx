@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Button from '../Shared/Button';
 import Item from './Item';
@@ -9,19 +9,24 @@ import style from './Boilers.module.css';
 const Boilers = () => {
   const [showAddBoiler, setShowAddBoiler] = useState(false);
 
-  const [boilers, setBoilers] = useState([
-    { id: 1, description: 'Zoolab', type: 'A' },
-    { id: 3, description: 'Zoolab', type: 'C' },
-    { id: 4, description: 'Gembucket', type: 'D' },
-    { id: 5, description: 'Holdlamis', type: 'C' },
-    { id: 6, description: 'Tampflex', type: 'A' },
-    { id: 7, description: 'Bitwolf', type: 'A' },
-    { id: 8, description: 'Tresom', type: 'D' },
-    { id: 9, description: 'Opela', type: 'B' },
-    { id: 10, description: 'Stringtough', type: 'C' },
-    { id: 11, description: 'Konklab', type: 'A' },
-    { id: 12, description: 'Sonair', type: 'B' },
-  ]);
+  const [boilers, setBoilers] = useState([]);
+
+  useEffect(() => {
+    const getBoilers = async () => {
+      const boilersFromServer = await fetchBoilers();
+      setBoilers(boilersFromServer);
+    };
+
+    getBoilers();
+  }, []);
+
+  //fetch boilers
+  const fetchBoilers = async () => {
+    const res = await fetch('http://localhost:5000/boilers');
+    const data = await res.json();
+
+    return data;
+  };
 
   //Add Boiler
   const addBoiler = (boiler) => {
