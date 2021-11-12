@@ -29,15 +29,26 @@ const Boilers = () => {
   };
 
   //Add Boiler
-  const addBoiler = (boiler) => {
-    const id = Math.floor(Math.random() * 100) + 1;
+  const addBoiler = async (boiler) => {
+    const res = await fetch(`http://localhost:5000/boilers`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(boiler)
+    })
 
-    const newBoiler = { id, ...boiler };
-    setBoilers([...boilers, newBoiler]);
+    const data = await res.json()
+
+    setBoilers([...boilers, data])
   };
 
   // Delete Boiler
-  const deleteBoiler = (id) => {
+  const deleteBoiler = async (id) => {
+    await fetch(`http://localhost:5000/boilers/${id}`, {
+      method: 'DELETE',
+    })
+
     setBoilers(boilers.filter((boiler) => boiler.id !== id));
   };
 
