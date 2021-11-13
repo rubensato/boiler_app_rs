@@ -65,8 +65,7 @@ const Boilers = () => {
   };
 
   //Edit boiler
-  const 
-
+  
   return (
     <div className={style.mainContainer}>
       <div className={style.headerTitle}>
