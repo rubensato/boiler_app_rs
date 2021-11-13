@@ -29,12 +29,12 @@ const Boilers = () => {
   };
 
   //fetch a boiler (by id)
-  const fetchBoiler = async (id) => {
-    const res = await fetch(`http://localhost:5000/boilers/{id}`);
-    const data = await res.json();
+  // const fetchBoiler = async (id) => {
+  //   const res = await fetch(`http://localhost:5000/boilers/{id}`);
+  //   const data = await res.json();
 
-    return data;
-  };
+  //   return data;
+  // };
 
   //Add Boiler
   const addBoiler = async (boiler) => {
@@ -60,12 +60,11 @@ const Boilers = () => {
     setBoilers(boilers.filter((boiler) => boiler.id !== id));
   };
 
+  // onClick function to set showAddBoiler
   const onClick = () => {
     setShowAddBoiler(!showAddBoiler);
   };
 
-  //Edit boiler
-  
   return (
     <div className={style.mainContainer}>
       <div className={style.headerTitle}>
