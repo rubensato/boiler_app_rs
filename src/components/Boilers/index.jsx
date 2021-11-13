@@ -20,9 +20,17 @@ const Boilers = () => {
     getBoilers();
   }, []);
 
-  //fetch boilers
+  //fetch boilers (All)
   const fetchBoilers = async () => {
     const res = await fetch('http://localhost:5000/boilers');
+    const data = await res.json();
+
+    return data;
+  };
+
+  //fetch a boiler (by id)
+  const fetchBoiler = async (id) => {
+    const res = await fetch(`http://localhost:5000/boilers/{id}`);
     const data = await res.json();
 
     return data;
@@ -33,21 +41,21 @@ const Boilers = () => {
     const res = await fetch(`http://localhost:5000/boilers`, {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json'
+        'Content-type': 'application/json',
       },
-      body: JSON.stringify(boiler)
-    })
+      body: JSON.stringify(boiler),
+    });
 
-    const data = await res.json()
+    const data = await res.json();
 
-    setBoilers([...boilers, data])
+    setBoilers([...boilers, data]);
   };
 
   // Delete Boiler
   const deleteBoiler = async (id) => {
     await fetch(`http://localhost:5000/boilers/${id}`, {
       method: 'DELETE',
-    })
+    });
 
     setBoilers(boilers.filter((boiler) => boiler.id !== id));
   };
@@ -55,6 +63,9 @@ const Boilers = () => {
   const onClick = () => {
     setShowAddBoiler(!showAddBoiler);
   };
+
+  //Edit boiler
+  const 
 
   return (
     <div className={style.mainContainer}>

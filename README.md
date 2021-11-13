@@ -52,8 +52,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### 1- `npm run server`
+Starts JSON server locally
+Open [http://localhost:5000/boilers](http://localhost:5000/boilers) to view the contents of db.json mock data file
 
+### 2- `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
