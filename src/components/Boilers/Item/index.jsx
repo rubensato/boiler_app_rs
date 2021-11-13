@@ -14,22 +14,16 @@ const Item = ({ boiler, onDelete }) => {
   };
 
   const editBoiler = async (updatedValuesBoiler) => {
-
     const res = await fetch(`http://localhost:5000/boilers/${boiler.id}`, {
       method: 'PUT',
       headers: {
-        'Content-type': 'application/json'
+        'Content-type': 'application/json',
       },
-      body: JSON.stringify(updatedValuesBoiler)
-    })
+      body: JSON.stringify(updatedValuesBoiler),
+    });
 
     console.log(
-      'editBoiler: ' +
-        updatedValuesBoiler.id +
-        ' , ' +
-        updatedValuesBoiler.description +
-        ' , ' +
-        updatedValuesBoiler.type
+      `editBoiler: ${updatedValuesBoiler.id} , ${updatedValuesBoiler.description} , ${updatedValuesBoiler.type}`
     );
   };
 
@@ -41,8 +35,6 @@ const Item = ({ boiler, onDelete }) => {
         <td>{boiler.type}</td>
         <td className={style.actions}>
           <Button
-            color='green'
-            text='Edit'
             color={showEditBoiler ? 'red' : 'green'}
             text={showEditBoiler ? 'Cancel Edit' : 'Edit'}
             onClick={onClickEdit}
