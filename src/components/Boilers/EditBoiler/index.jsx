@@ -6,6 +6,8 @@ const EditBoiler = ({ boiler, onEdit }) => {
   const descriptionInputRef = useRef();
   const typeInputRef = useRef();
 
+  const { id, description, type } = boiler;
+
   const editAndSave = () => {
     const enteredDescription = descriptionInputRef.current.value;
     const enteredType = typeInputRef.current.value;
@@ -14,7 +16,7 @@ const EditBoiler = ({ boiler, onEdit }) => {
     console.log('enteredType: ' + enteredType);
 
     const updatedValuesBoiler = {
-      id: boiler.id,
+      id: id,
       description: enteredDescription,
       type: enteredType,
     };
@@ -29,15 +31,15 @@ const EditBoiler = ({ boiler, onEdit }) => {
           <form className={style.editForm} onSubmit={editAndSave}>
             <div className='form-control'>
               <label>id</label>
-              <input type='text' value={boiler.id} readOnly></input>
+              <input type='text' value={id}></input>
             </div>
             <div className='form-control'>
               <label>description</label>
               <input
                 className='form-control'
                 type='text'
-                value={boiler.description}
-                ref={descriptionInputRef}
+                defaultValue={description}
+                ref={descriptionInputRef} 
               ></input>
             </div>
             <div className='form-control'>
@@ -45,7 +47,7 @@ const EditBoiler = ({ boiler, onEdit }) => {
               <input
                 className='form-control'
                 type='text'
-                value={boiler.type}
+                defaultValue={type}
                 ref={typeInputRef}
               ></input>
             </div>

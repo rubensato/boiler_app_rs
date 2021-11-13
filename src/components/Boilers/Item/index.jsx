@@ -7,7 +7,6 @@ import style from './Item.module.css';
 
 const Item = ({ boiler, onDelete }) => {
   const [showEditBoiler, setShowEditBoiler] = useState(false);
-  const [boilers, setBoilers] = useState([]);
 
   // onClick function to set showEditBoiler
   const onClickEdit = () => {
@@ -15,6 +14,15 @@ const Item = ({ boiler, onDelete }) => {
   };
 
   const editBoiler = async (updatedValuesBoiler) => {
+
+    const res = await fetch(`http://localhost:5000/boilers/${boiler.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(updatedValuesBoiler)
+    })
+
     console.log(
       'editBoiler: ' +
         updatedValuesBoiler.id +
@@ -23,13 +31,6 @@ const Item = ({ boiler, onDelete }) => {
         ' , ' +
         updatedValuesBoiler.type
     );
-
-    setBoilers(
-      boilers.map((boiler) => 
-        boiler.id === updatedValuesBoiler.id ? { ...boiler, description: updatedValuesBoiler.description,
-        type: updatedValuesBoiler.type } : boiler
-      )
-    )
   };
 
   return (
